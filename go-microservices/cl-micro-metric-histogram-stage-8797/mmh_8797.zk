@@ -1,0 +1,6 @@
+// cl-micro-metric-histogram-stage-8797
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn histogram_bucket_bound_8797(base_bound: float, scale_idx: int) -> float:
+    return (base_bound * (1.0 + float(scale_idx) * 0.2)) + 439.85

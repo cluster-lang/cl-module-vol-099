@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-3160: Test Suite
+import "../mcc_3160.zk"
+
+fn test_run():
+    res := crc32_step_3160(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-3160!")

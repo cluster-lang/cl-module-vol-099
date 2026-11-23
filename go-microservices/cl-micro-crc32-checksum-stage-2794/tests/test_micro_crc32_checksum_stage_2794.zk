@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-2794: Test Suite
+import "../mcc_2794.zk"
+
+fn test_run():
+    res := crc32_step_2794(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-2794!")

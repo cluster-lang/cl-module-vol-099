@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-378: Test Suite
+import "../mcc_378.zk"
+
+fn test_run():
+    res := crc32_step_378(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-378!")

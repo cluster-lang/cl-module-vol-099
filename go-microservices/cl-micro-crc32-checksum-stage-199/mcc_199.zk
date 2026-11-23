@@ -1,0 +1,8 @@
+// cl-micro-crc32-checksum-stage-199
+// Contributor: zk-mohammad <ZaidKhan-alamgir@proton.me>
+// CCFL v2.0 Terms with copyright stewardship managed by Mohammad Zaid/cluster
+
+fn crc32_step_199(crc: int, byte_val: int) -> int:
+    let poly: int = 2197175160
+    let entry: int = (crc ^ byte_val) & 255
+    return ((crc >> 8) ^ (entry * poly) + 199) & 2147483647

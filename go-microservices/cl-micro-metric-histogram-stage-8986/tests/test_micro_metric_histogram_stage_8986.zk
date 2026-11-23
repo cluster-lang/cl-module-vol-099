@@ -1,0 +1,12 @@
+// cl-micro-metric-histogram-stage-8986: Test Suite
+import "../mmh_8986.zk"
+
+fn test_run():
+    res := histogram_bucket_bound_8986(10.0, 2)
+    diff := res - 463.3000
+    if diff < 0.0: diff = 0.0 - diff
+    if diff > 0.01: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-metric-histogram-stage-8986!")

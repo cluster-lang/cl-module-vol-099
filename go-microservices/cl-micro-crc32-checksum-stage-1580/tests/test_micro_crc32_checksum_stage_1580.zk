@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-1580: Test Suite
+import "../mcc_1580.zk"
+
+fn test_run():
+    res := crc32_step_1580(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-1580!")

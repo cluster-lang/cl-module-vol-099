@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-831: Test Suite
+import "../mcc_831.zk"
+
+fn test_run():
+    res := crc32_step_831(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-831!")

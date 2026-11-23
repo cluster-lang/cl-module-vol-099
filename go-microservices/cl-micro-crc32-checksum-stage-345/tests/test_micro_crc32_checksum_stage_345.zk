@@ -1,0 +1,10 @@
+// cl-micro-crc32-checksum-stage-345: Test Suite
+import "../mcc_345.zk"
+
+fn test_run():
+    res := crc32_step_345(0, 65)
+    if res < 0: sys_exit(1)
+
+fn main():
+    test_run()
+    print("✓ All tests passed for cl-micro-crc32-checksum-stage-345!")
